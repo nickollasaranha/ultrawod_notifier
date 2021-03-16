@@ -59,7 +59,6 @@ def check_availability(URL):
 
 def send_message(msg):
     telegram_bot.sendMessage(chat_id=ULTRAWOD_CHAT_ID, text=msg)
-    telegram_bot.sendMessage(chat_id=ULTRAWOD_CHAT_ID, text=r'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCqpeojMBc0E9PMbnkyfQckrULtgodUr5r2Wn26xWZ5j6NcTygx3rG0ROozfBr42RAHLQaZb1nbpv8O5P0jiy/5EeUj7hVFtS5rDhTXlj9TVDXSYtF3zLMMBosi+7GuAOlHxzA+HbCmw2cVDUwrfw379ENJ0jn1sek2+KNnJsng6u0tF3Do0ukM0wBF+u7mej3ZTujB7sS5XhEN4NVFG4ycLIy4/t326hO/WSrbwcUqgNhVlnYJdzsJVTixPTm/ANHaDlg72RQk0UMRZGPFnHfOaSqcllIaQVI9bYBXUp1ASuFkALrtmN4h53RCO2nN/aKk/f6rcJ66C6S34os3c01OLazDuKkA+B+aDIl7wu8GKxfmHQnwt/SYZHWiIsxJIcUIOqCTDcS9jjLwfwYWB7D5VjMxm9aMzenC+sorr7wPE5HoMVVBaavB+953j3CqLXJOJ4508kinzkSVg/1Tq5Ly8uFMMX2m6g9s+N6GZZimaMWXLR8RLso/Mf6f2+9VlcM= ubuntu@ip-172-31-16-207')
 
 def check_eventos():
     page = requests.get(ultrawod_eventos)
