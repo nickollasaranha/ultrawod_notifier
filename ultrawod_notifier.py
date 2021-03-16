@@ -111,7 +111,6 @@ def main():
     scheduler.add_job(check_eventos, 'interval', seconds=update_frequency)
     scheduler.add_job(check_working, 'cron', day="*", hour=5)
 
-    send_message("oie")
     try:
         scheduler.start()
     except (KeyboardInterrupt, SystemExit):
